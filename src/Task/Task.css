@@ -1,0 +1,116 @@
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #49a09d; /* Blue */
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 2s linear infinite;
+    align-self: center;
+  }
+  .loader-p{
+    align-self: center;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:80%;
+    height: 50px;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    margin-left: -30px;
+}
+.header ul li{
+    padding: 0 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header p{
+    font-weight: 600;
+}
+.th{
+    width: 10px;
+}
+.income{
+    padding: 0 15px;
+}
+.pp{
+    padding-right: 0px;
+}
+.main-content{
+    height: 650px;
+    width: 1300px;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+}
+
+.main-content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #e1e1e1;
+}
+
+.main-content::-webkit-scrollbar
+{
+	width: 10px;
+    scroll-behavior: smooth;
+}
+
+.main-content::-webkit-scrollbar-thumb
+{
+	border-radius: 20px;
+    height: 50px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background:  linear-gradient(45deg, #49a09d, #5f2c82);
+}
+th{
+    color: #0c0c0c;
+    pointer-events: none;
+}
+th,
+td{
+   
+    letter-spacing: 0.15px;
+    color:#000;
+    border-bottom: 0.1px solid rgba(0,0,0,0.4);
+    text-align: left;
+    height: 60px;
+    padding: 0 10px;
+}
+.tr{
+    cursor: pointer;
+}
+.tr:hover{
+    background-color: rgba(73, 160, 157,0.2);
+}
